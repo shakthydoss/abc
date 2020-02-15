@@ -1,0 +1,7 @@
+# ignore the below directories
+venv
+img
+out
+# ignore the below files.
+.vscode
+.DS_Store
