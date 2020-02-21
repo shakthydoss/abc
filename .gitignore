@@ -1,7 +1,12 @@
-# ignore the below directories
+# ignore the below directories in any path
 venv
 img
 out
+pdf
+__pycache__
+*.egg-info
+
 # ignore the below files.
+*.pdf
 .vscode
 .DS_Store

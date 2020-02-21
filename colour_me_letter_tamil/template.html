@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div.rectangle {
+  border: solid 1px gray;
+  width: 209mm;
+  height: 296mm;
+  position: relative;
+}
+div.header{
+	height: 100px;
+    background-color: #fbbc05;
+    border-bottom: solid 1px gray;
+}
+.header .left {
+	background-color: #4285f4;
+    float: left;
+    width: 20%;
+    height: 100px;
+    overflow-wrap: break-word;
+    font-family: 'Chalkboard';
+    font-size: 23px;
+    text-align: center;
+    line-height: 35px;
+    display: table;
+    color: azure;
+}
+.header .right{
+    background-color: #4285f4;
+    float: right;
+    width: 20%;
+    height: 100px;
+    overflow-wrap: break-word;
+    font-family: 'Chalkboard';
+    font-size: 23px;
+    text-align: center;
+    line-height: 35px;
+    display: table;
+    color: azure;
+}
+
+.header .middle{
+	float: left;
+	width: 60%;
+	font-family: 'Chalkboard';
+	font-size: 13px;
+}
+
+.middle .lpart{
+	float: left;
+	width: 47%;
+	height: 100px;
+	margin-left: 3%;
+}
+.middle .rpart{
+	float: left;
+	width: 50%;
+	height: 100px;
+}
+.footer{
+	font-family: 'Chalkboard';
+    font-size: 10px;
+    color: gray;
+    line-height: 14px;
+    text-align: center;
+    width: inherit;
+	position: absolute;
+	bottom: 15px;
+}
+
+.content .img{
+	text-align: center;
+    padding-top: 145px;
+}
+
+</style>
+<head>
+</head> 
+<body> 
+<div class="rectangle">
+    <div class="header">
+		<div>
+			<div class="left">
+				<div style="display: table-cell;vertical-align: middle;">Rangoon Publications</div>
+			</div>
+			<div class="middle">
+				<div class="lpart">
+					<div style="padding-top: 21px;"><span>{TITLE} : </span><span>{TITLE_VAL}</span></div>
+					<div style="padding-top: 21px;"><span>{WORKSHEET_ID} :</span><span>{WORKSHEET_ID_VAL}</span></div>
+				</div>
+				<div class="rpart">
+					<div style="padding-top: 21px;"><span>{NAME} : </span><span>___________________</span></div>
+					<div style="padding-top: 21px;"><span>{DATE} : </span><span>___________________</span></div>
+				</div>
+			</div>
+			<div class="right">
+				<div style="display: table-cell;vertical-align: middle;">Colour Me Worksheets</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>{FOOTER_LINE_1}</div>
+		<div>{FOOTER_LINE_2}</div>
+	</div>
+	<div class="content">
+		<div class="img">
+			<img src="data:;base64,{IMG_1}" height="299">
+		</div>
+		<div class="img">
+			<img src="data:;base64,{IMG_2}" height="299">
+		</div>
+	</div>
+</div>
+</body>
+</html>
