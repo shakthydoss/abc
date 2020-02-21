@@ -15,11 +15,13 @@ source venv/bin/activate
 pip install - r requirements.txt
 ```
 
+
 Install Genie tool
 remove any .egg-info in tools directory.
 cd tools 
 rm -rf *.egg-info 
 cd ../
+
 ```
 pip uninstall tools
 pip install -e tools/
