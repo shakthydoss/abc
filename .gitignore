@@ -5,6 +5,7 @@ out
 pdf
 __pycache__
 *.egg-info
+*.png
 
 # ignore the below files.
 *.pdf
