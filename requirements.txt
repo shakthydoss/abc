@@ -6,7 +6,7 @@ mccabe==0.6.1
 numpy==1.18.1
 opencv-python==4.2.0.32
 pdfkit==0.6.1
-Pillow==7.0.0
+Pillow==9.0.0
 pylint==2.4.4
 six==1.14.0
 typed-ast==1.4.1
